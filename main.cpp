@@ -1,27 +1,23 @@
 #include <iostream>
+#include "Computer.h"
 
 using namespace std;
 
-class Product
+void displayProduct(Product& product)
 {
-    int     id;
-    int     productSize;
-    float   productPrice;
-
-
-
-};
-
-class Computer
-{
-    int     ram;
-    int     screenSize;
-    bool    isproductPrice;
-
-};
+    product.productModel += "2";
+    cout << product.productModel << endl;
+}
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Computer    myComputer;
+
+    myComputer.productPrice = 300.0;
+    myComputer.isLaptop = true;
+    myComputer.productModel = "Gamer";
+
+    displayProduct(myComputer);
+
     return 0;
 }
