@@ -1,6 +1,6 @@
 #include "Product.h"
 
-Product::Product()
+Product::Product(Brands* _brand) : brand(_brand)
 {
     //ctor
 }
